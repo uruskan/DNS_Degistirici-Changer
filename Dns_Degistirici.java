@@ -10,8 +10,8 @@ import java.io.IOException;
 
 public class Dns_Degistirici {
     public static void main(String[] args) throws IOException {
-        String str = "nameserver1 8.8.8.8 \n";
-        String str2 = "nameserver2 8.8.4.4";
+        String str = "nameserver 8.8.8.8 \n";
+        String str2 = "nameserver 8.8.4.4";
 
         File file = new File("/etc/resolv.conf");
         if (!file.exists()) {
